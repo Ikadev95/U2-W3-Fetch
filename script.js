@@ -56,10 +56,7 @@ function getLibrary (){
                     li.classList.add('list-group-item'); 
                     list.appendChild(li);
                 });
-            }
-            
-
-        
+            }   
     })
     .catch((error) =>{
         console.log(error);
@@ -67,4 +64,3 @@ function getLibrary (){
 };
 
 getLibrary();
-
