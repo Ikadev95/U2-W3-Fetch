@@ -1,0 +1,11 @@
+img {
+    height: 350px;
+    object-fit: cover;
+}
+.card{
+    height: 570px;
+}
+.card-text{
+    max-height: 50px;
+    overflow: hidden;
+}
