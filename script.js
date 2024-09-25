@@ -50,6 +50,8 @@ function getLibrary (){
                 button.addEventListener('click', function() {
                     const card = button.closest('.col');
                     const titleCard = card.querySelector('.card-title').textContent;
+                    cartBooks.push(titleCard);
+                    localStorage.setItem('cart',JSON.stringify(cartBooks));
 
                     const li = document.createElement('li');
                     li.innerText = titleCard;
@@ -62,5 +64,6 @@ function getLibrary (){
         console.log(error);
     })
 };
-
+let cartBooks = [];
 getLibrary();
+console.log(cartBooks);
